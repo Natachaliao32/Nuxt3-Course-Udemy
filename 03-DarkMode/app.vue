@@ -1,5 +1,11 @@
+<script setup lang="ts">
+import {} from '#app'
+
+  const { isDarkMode } = useDarkMode()
+</script>
+
 <template>
-  <div>
+  <div :style="isDarkMode && { background: 'black' }">
     <Nav />
     <Heading />
     <Cards />
